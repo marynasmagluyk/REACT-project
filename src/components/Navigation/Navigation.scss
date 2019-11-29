@@ -1,0 +1,28 @@
+.Navigation {
+    display: flex;
+    align-items: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    li {
+        margin: 0 15px;
+    }
+
+    a, .LogoutButton {
+        text-decoration: none;
+        color: #fff;
+        transition: color 200ms ease;
+        cursor: pointer;
+
+        &.Active,
+        &:hover {
+            text-decoration: underline;
+            color: orange;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.Input {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px;
+    min-width: 350px;
+
+    &.Correct {
+        border-color: #01d401;
+    }
+
+    &.Incorrect {
+        border-color: #d40124;
+    }
+}

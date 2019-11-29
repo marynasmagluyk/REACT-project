@@ -1,0 +1,10 @@
+.Toolbar {
+    padding: 25px;
+    background-color: rgba(black, .8);
+    display: flex;
+    justify-content: space-between;
+
+    .Navigation:only-child {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,66 @@
+.FavoriteMovies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.FavoriteMovie {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, .7);
+    }
+
+    h1 {
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 15px;
+        min-height: 75px;
+    }
+
+    .ContentWrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    .ImageWrapper {
+        max-width: 200px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .Content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-basis: calc(100% - 215px);
+
+        .MovieInfo {
+            p, strong {
+                color: #fff;
+            }
+        }
+
+        button {
+            align-self: center;
+        }
+    }
+}

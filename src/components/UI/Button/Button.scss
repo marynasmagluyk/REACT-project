@@ -1,0 +1,19 @@
+.Button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    background-color: #075eeb;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+
+    &:hover {
+        background-color: darken(#075eeb, 10%);
+    }
+
+    &.Disabled {
+        background-color: #eee;
+        cursor: not-allowed;
+    }
+}
